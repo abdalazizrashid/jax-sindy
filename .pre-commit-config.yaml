@@ -37,8 +37,8 @@ repos:
   rev: pylint-2.6.0
   hooks:
     - id: pylint
-      args: [--rcfile=.pylintrc]
-      files: ^jax_sindy/
+      args: [--disable=F0401]
+      files: jax_sindy
 
 - repo: https://gitlab.com/PyCQA/flake8
   rev: 3.8.4
