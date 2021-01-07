@@ -3,8 +3,10 @@
 from typing import Callable
 
 import jax.numpy as np
+from jax import jit
 
 
+@jit
 def finite_difference(order: int = 1) -> Callable:
     """Finite difference derivatives.
 
